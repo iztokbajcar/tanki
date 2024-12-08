@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/lobby_bg"
+	android:orientation="vertical"
+	tools:context=".SettingsActivity">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:textColor="#555500"
+		android:text="@string/settings"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="5">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_1" />
+
+					<EditText
+						android:id="@+id/ime1"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb1_igralec"
+						android:orientation="horizontal">
+
+						<!--<RadioButton
+							android:id="@+id/rb1_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="(brez)" />-->
+						<RadioButton
+							android:id="@+id/rb1_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb1_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b1"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_2" />
+
+					<EditText
+						android:id="@+id/ime2"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb2_igralec"
+						android:orientation="horizontal">
+
+						<!--<RadioButton
+							android:id="@+id/rb2_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="(brez)" />-->
+						<RadioButton
+							android:id="@+id/rb2_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb2_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b2"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_3" />
+
+					<EditText
+						android:id="@+id/ime3"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb3_igralec"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/rb3_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/empty" />
+
+						<RadioButton
+							android:id="@+id/rb3_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb3_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b3"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_4" />
+
+					<EditText
+						android:id="@+id/ime4"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb4_igralec"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/rb4_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/empty" />
+
+						<RadioButton
+							android:id="@+id/rb4_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb4_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b4"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_5" />
+
+					<EditText
+						android:id="@+id/ime5"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb5_igralec"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/rb5_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/empty" />
+
+						<RadioButton
+							android:id="@+id/rb5_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb5_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b5"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_6" />
+
+					<EditText
+						android:id="@+id/ime6"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r6"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb6_igralec"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/rb6_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/empty" />
+
+						<RadioButton
+							android:id="@+id/rb6_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb6_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b6"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_7" />
+
+					<EditText
+						android:id="@+id/ime7"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r7"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb7_igralec"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/rb7_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/empty" />
+
+						<RadioButton
+							android:id="@+id/rb7_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb7_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b7"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_8" />
+
+					<EditText
+						android:id="@+id/ime8"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r8"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb8_igralec"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/rb8_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/empty" />
+
+						<RadioButton
+							android:id="@+id/rb8_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb8_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b8"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/player_9" />
+
+					<EditText
+						android:id="@+id/ime9"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content" />
+
+					<RadioGroup
+						android:id="@+id/r9"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checkedButton="@id/rb9_igralec"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/rb9_brez"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/empty" />
+
+						<RadioButton
+							android:id="@+id/rb9_igralec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/human" />
+
+						<RadioButton
+							android:id="@+id/rb9_AI"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/AI" />
+					</RadioGroup>
+
+					<Button
+						android:id="@+id/b9"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginStart="20dp"
+						android:onClick="barva" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<!-- VETER -->
+			<!--<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/v"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="true"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/wind" />
+
+			</LinearLayout>-->
+
+			<!-- OBLAKI -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/obl"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="true"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/clouds" />
+
+			</LinearLayout>
+
+			<!-- HRIBČKI -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/hills"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/hills" />
+
+
+			</LinearLayout>
+
+			<!-- TEKSTURA -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/terr_texture"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/terrain_texture" />
+
+			</LinearLayout>
+
+			<!-- Velikost zrn teksture -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/texture_detail" />
+
+				<NumberPicker
+					android:id="@+id/grain_size"
+					android:layout_width="wrap_content"
+					android:layout_height="50dp"
+					android:layout_margin="5dp"
+					android:scaleX="1.5"
+					android:scaleY="1.5" />
+
+			</LinearLayout>
+
+			<!-- ALI IMAJO TANKI HP -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/tank_damage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/tank_limited_hp" />
+
+			</LinearLayout>
+
+			<!-- PRIKAŽE HP TANKA OB IMENU -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/tank_show_hp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/tank_show_hp" />
+
+			</LinearLayout>
+
+			<!-- ALI TANK ODVRŽE CLUSTER BOMB OB UNIČENJU -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/tank_cbomb"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/tank_cluster_bomb" />
+
+			</LinearLayout>
+
+			<!-- BLISK TANKKA -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/tank_flash"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/tank_flash" />
+
+
+			</LinearLayout>
+
+			<!-- HP TANKKA -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/tank_hp_desc" />
+
+				<Spinner
+					android:id="@+id/tank_hp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+
+			</LinearLayout>
+
+			<!-- BLISK IZSTRELKA -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/bomb_flash"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/bomb_flash" />
+
+
+			</LinearLayout>
+
+			<!-- BOLJŠI IZGLED TANKOV -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/tank_appr"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/tank_appearance" />
+
+			</LinearLayout>
+
+			<!-- PARTIKLI -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/particles"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/particles" />
+
+			</LinearLayout>
+
+			<!-- TANKI LAHKO SPREMINJAJO OROŽJE -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/tank_ai_change_weapon"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="false"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/tank_ai_change_weapon" />
+
+			</LinearLayout>
+
+			<!-- OROŽJE TANKOV -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/tank_ai_weapon" />
+
+				<Spinner
+					android:id="@+id/tank_weapon"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+			</LinearLayout>
+
+			<!-- ZVOK -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<Switch
+					android:id="@+id/sound"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:checked="true"
+					android:enabled="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/sound" />
+
+			</LinearLayout>
+
+			<!-- Teren in ozadja -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<!-- Ozadje -->
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/background" />
+
+					<ImageView
+						android:id="@+id/iv_ozadje"
+						android:layout_width="160dp"
+						android:layout_height="90dp" />
+
+					<LinearLayout
+						android:layout_width="160dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:orientation="horizontal">
+
+						<Button
+							android:id="@+id/ozadje_nazaj"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_gravity="left"
+							android:onClick="ozadjeNazaj"
+							android:text="@string/weapon_previous_button" />
+
+						<Button
+							android:id="@+id/ozadje_naprej"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_gravity="right"
+							android:onClick="ozadjeNaprej"
+							android:text="@string/weapon_next_button" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<!-- Teren -->
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/terrain" />
+
+					<ImageView
+						android:id="@+id/iv_teren"
+						android:layout_width="160dp"
+						android:layout_height="90dp" />
+
+					<LinearLayout
+						android:layout_width="160dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:orientation="horizontal">
+
+						<Button
+							android:id="@+id/teren_nazaj"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_gravity="left"
+							android:onClick="terenNazaj"
+							android:text="@string/weapon_previous_button" />
+
+						<Button
+							android:id="@+id/teren_naprej"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_gravity="right"
+							android:onClick="terenNaprej"
+							android:text="@string/weapon_next_button" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<!-- Tekstura -->
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/terrain_texture" />
+
+					<ImageView
+						android:id="@+id/iv_teren_tekstura"
+						android:layout_width="160dp"
+						android:layout_height="90dp" />
+
+					<LinearLayout
+						android:layout_width="160dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:orientation="horizontal">
+
+						<Button
+							android:id="@+id/teren_tekstura_nazaj"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_gravity="left"
+							android:onClick="teksturaNazaj"
+							android:text="@string/weapon_previous_button" />
+
+						<Button
+							android:id="@+id/teren_tekstura_naprej"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_gravity="right"
+							android:onClick="teksturaNaprej"
+							android:text="@string/weapon_next_button" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<!-- PROFILI -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/saveprofile" />
+
+					<EditText
+						android:id="@+id/profileName"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5dp"/>
+
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/save"
+						android:onClick="saveAsProfile"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/loadprofile" />
+
+					<Spinner
+						android:id="@+id/profili"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" />
+
+					<Button
+						android:id="@+id/button_loadprofile"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/load"
+						android:onClick="loadProfile"/>
+
+				</LinearLayout>
+
+			</LinearLayout> -->
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

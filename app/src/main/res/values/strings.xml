@@ -1,0 +1,115 @@
+<resources>
+	<string name="app_name" translatable="false">Tanki</string>
+	<string name="new_game">NEW GAME</string>
+	<string name="settings">Settings</string>
+	<string name="fire">FIRE</string>
+	<string name="player_name_placeholder">[PLAYER]</string>
+	<string name="wind_placeholder">Wind: ???</string>
+	<string name="power_placeholder">Power: ???</string>
+	<string name="power_up_button" translatable="false">&#8673;</string>
+	<string name="power_down_button" translatable="false">&#8675;</string>
+	<string name="rotation_placeholder">Rotation: ???</string>
+	<string name="turret_left_button" translatable="false">&#8592;</string>
+	<string name="turret_right_button" translatable="false">&#8594;</string>
+	<string name="player_1_placeholder">[PLAYER 1]</string>
+	<string name="player_2_placeholder">[PLAYER 2]</string>
+	<string name="player_3_placeholder">[PLAYER 3]</string>
+	<string name="player_4_placeholder">[PLAYER 4]</string>
+	<string name="player_5_placeholder">[PLAYER 5]</string>
+	<string name="player_6_placeholder">[PLAYER 6]</string>
+	<string name="player_1">Player 1:</string>
+	<string name="player_2">Player 2:</string>
+	<string name="player_3">Player 3:</string>
+	<string name="player_4">Player 4:</string>
+	<string name="player_5">Player 5:</string>
+	<string name="player_6">Player 6:</string>
+	<string name="human">Human</string>
+	<string name="AI">Artificial intelligence</string>
+	<string name="empty">(Empty)</string>
+	<string name="wind">Wind</string>
+	<string name="sand">Sand (may negatively affect performance)</string>
+	<string name="weapon_ball">Ordinary projectile</string>
+	<string name="weapon_bigball">Big projectile</string>
+	<string name="weapon_tnt">Explosive projectile</string>
+	<string name="weapon_placeholder">[WEAPON]</string>
+	<string name="weapon_previous_button" translatable="false">&#8678;</string>
+	<string name="weapon_next_button" translatable="false">&#8680;</string>
+	<string name="weapon_test">TEST</string>
+	<string name="weapon_terrain">Terrain</string>
+	<string name="weapon_three_balls">Three ordinary projectiles</string>
+	<string name="weapon_clusterbomb">Cluster bomb</string>
+	<string name="weapon_doubleclusterbomb">Double cluster bomb</string>
+	<string name="weapon_nuke">NUKE</string>
+	<string name="hp_placeholder" translatable="false">HP: ???</string>
+	<string name="tank_limited_hp">Tanks can be damaged</string>
+	<string name="tank_cluster_bomb">Tank spawns a cluster bomb when destroyed</string>
+	<string name="background">Background</string>
+	<string name="terrain">Terrain</string>
+	<string name="by_author" translatable="false">Iztok Bajcar, 2019 - 2020</string>
+	<string name="tank_appearance">Tanks look better</string>
+	<string name="hills">Hills</string>
+	<string name="terrain_texture">Textured terrain</string>
+	<string name="weapon_doubleterrainclusterbomb">Dbl. terr. cluster bomb</string>
+	<string name="tank_ai_weapon">AI weapon</string>
+	<string name="tank_ai_change_weapon">AI is able to change weapon</string>
+	<string name="tap_again_to_exit">Tap the back button again to exit.</string>
+	<string name="tank_show_hp">Show tank\'s HP level next to its name</string>
+	<string name="bomb_flash">Projectiles flash when exploding</string>
+	<string name="tank_flash">Tanks flash when exploding</string>
+	<string name="weapon_thermonuclear20">Thermonuclear 20</string>
+	<string name="tank_hp_desc">Initial HP value</string>
+	<string name="weapon_obliterator">The Obliterat0r</string>
+	<string name="weapon_thermonuclear50">Thermonuclear 50</string>
+	<string name="player_7">Player 7:</string>
+	<string name="player_8">Player 8:</string>
+	<string name="player_7_placeholder">[PLAYER 7]</string>
+	<string name="player_8_placeholder">[PLAYER 8]</string>
+	<string name="saveprofile">Save settings as:</string>
+	<string name="loadprofile">Load settings:</string>
+	<string name="particles">Particles (experimental)</string>
+	<string name="texture_detail">Grain size</string>
+	<string name="save">Save</string>
+	<string name="load">Load</string>
+	<string name="saved">Saved.</string>
+	<string name="player_9">Player 9:</string>
+	<string name="player_9_placeholder">[PLAYER 9]</string>
+	<string name="clouds">Clouds</string>
+	<string name="sound">Sound</string>
+	<string name="creditsAuthor">Game by Iztok Bajcar (2019 - 2020)</string>
+	<string name="about">About</string>
+	<string name="creditsSounds">Sound effects from freesound.org</string>
+	<string name="hostmp">Host a multiplayer game</string>
+	<string name="lobby_name_title">Lobby name</string>
+	<string name="lobby_name_text">Please name your new lobby.</string>
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="server_unreachable_title">Server unreachable</string>
+	<string name="server_unreachable_text">The game server seems to be currently unreachable, please try again later.</string>
+	<string name="server_error_title">Error %1$d</string>
+	<string name="server_error_text">An error has occurred while the server was processing the request. Please try again later or try connecting to a different server.</string>
+	<string name="game_error_title">Error creating lobby</string>
+	<string name="game_error_text">Could not initiate the lobby, because the name is invalid or another lobby with the same name already exists. Please try with another name or try again later.</string>
+	<string name="player_name_title">Player name</string>
+	<string name="player_name_text">Please enter your name.</string>
+	<string name="player_error_title">Error creating player</string>
+	<string name="player_error_text">Could not use the specified player name, another player with the same name might already be waiting in this lobby. Please try with another name.</string>
+	<string name="waiting_player">Waiting for player...</string>
+	<string name="server_address_title">Server address</string>
+	<string name="server_address_text">Please enter the address of the server you want to connect to (or leave empty for default)</string>
+	<string name="conn_succesful">Connection succesfully established.</string>
+	<string name="server_timeout_title">Timeout</string>
+	<string name="server_timeout_text">The timeout period has been exceeded.</string>
+	<string name="lobby_ready">I\'m ready</string>
+	<string name="lobby_start">Start game</string>
+	<string name="player_ready">READY</string>
+	<string name="server">"Server: "</string>
+	<string name="mp">Online play</string>
+	<string name="new_game_name">(game name)</string>
+	<string name="join">Join game</string>
+	<string name="status_waiting">Waiting for server response...</string>
+	<string name="status_noconnection">Could not connect to the server.</string>
+	<string name="status_timeout">The timeout period has expired.</string>
+	<string name="status_ok">Connected.</string>
+	<string name="refresh">Refresh</string>
+	<string name="start_error_text">Failed to start the game.</string>
+</resources>

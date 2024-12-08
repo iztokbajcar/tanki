@@ -1,0 +1,27 @@
+2020-??-??:
+ - easter egg pretvorjen v test povezave s strežnikom
+ - dodano ozadje aktivnosti (lobby_bg.png)
+ - spremenjen glavni meni
+ - izstrelki lahko zdaj zadanejo tudi tanke, ne več samo terena
+
+2020-05-12:
+ - začetek poimenovanja verzij znotraj aplikacije
+ - dodana možnost zvoka (vklop/izklop v nastavitvah)
+ - odpravljeni crashi zaradi uničenja tanka med spreminjanjem napisov
+
+2020-03-27:
+ - dodan deveti igralec
+ - dodano ozadje
+ - manjša optimizacija shranjevanja nastavitev
+ - smer vetra se po novem ne more spremeniti pogosteje kot na vsakih 5 krogov
+ - odstranjena možnost izklopa vetra
+ - dodani oblaki, ki se premikajo glede na veter
+ - oblake je možno vklopiti/izklopiti v nastavitvah
+ - dodan easter egg
+ 
+2020-03-18:
+ - dve ozadji sta bili odstranjeni
+ - nastavitve se zdaj da shranjevati v profile
+
+2020-02-29:
+ - popravljeno slovensko besedilo

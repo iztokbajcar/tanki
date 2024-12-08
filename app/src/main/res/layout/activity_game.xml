@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/iv"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
+	<LinearLayout
+		android:id="@+id/ui"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#44aaaaaa"
+		android:orientation="horizontal"
+		android:gravity="left">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/streljaj"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_margin="10dp"
+				android:layout_gravity="left|center_vertical"
+				android:background="#800000"
+				android:textSize="10sp"
+				android:text="@string/fire"
+				android:typeface="monospace"
+				android:onClick="streljaj" />
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/igralec"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/player_name_placeholder" />
+
+				<TextView
+					android:id="@+id/veter"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/wind_placeholder" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="right">
+
+			<!-- ZDRAVJE -->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/hp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="@string/hp_placeholder"/>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<!-- Orožje (slika) -->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:orientation="vertical">
+
+				<ImageView
+					android:id="@+id/iv_orozje"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="10dp"/>
+
+			</LinearLayout>
+
+			<!-- MOČ -->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/moc"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="@string/power_placeholder" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/mocGor"
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:layout_alignParentLeft="true"
+						android:layout_margin="10dp"
+						android:background="#008080"
+						android:text="@string/power_up_button"
+						android:typeface="monospace" />
+
+					<Button
+						android:id="@+id/mocDol"
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:layout_alignParentRight="true"
+						android:layout_margin="10dp"
+						android:padding="0dp"
+						android:background="#008080"
+						android:text="@string/power_down_button"
+						android:typeface="monospace" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<!-- <LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/orozje"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="Moč: ?%"/>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/orozjeGor"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_alignParentLeft="true"
+						android:layout_margin="10dp"
+						android:background="#008080"
+						android:text="&#8673;"
+						android:typeface="monospace"/>
+
+					<Button
+						android:id="@+id/orozjeDol"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_alignParentRight="true"
+						android:layout_margin="10dp"
+						android:padding="0dp"
+						android:background="#008080"
+						android:text="&#8675;"
+						android:typeface="monospace"/>
+
+				</LinearLayout>
+
+			</LinearLayout> -->
+
+
+
+			<!-- OROŽJE -->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="false"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/orozje"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="@string/weapon_placeholder" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/orozjeNazaj"
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:layout_alignParentLeft="true"
+						android:layout_margin="10dp"
+						android:background="#804000"
+						android:text="@string/weapon_previous_button"
+						android:typeface="monospace" />
+
+					<Button
+						android:id="@+id/orozjeNaprej"
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:layout_alignParentRight="true"
+						android:layout_margin="10dp"
+						android:padding="0dp"
+						android:background="#804000"
+						android:text="@string/weapon_next_button"
+						android:typeface="monospace" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<!-- ROTACIJA -->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/rotacija"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="@string/rotation_placeholder" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/topLevo"
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:layout_alignParentLeft="true"
+						android:layout_margin="10dp"
+						android:background="#008000"
+						android:text="@string/turret_left_button"
+						android:typeface="monospace" />
+
+					<Button
+						android:id="@+id/topDesno"
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:layout_alignParentRight="true"
+						android:layout_margin="10dp"
+						android:padding="0dp"
+						android:background="#008000"
+						android:text="@string/turret_right_button"
+						android:typeface="monospace" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+
+
+		<!--<Button
+			android:id="@+id/naprej"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginTop="10dp"
+			android:background="#000080"
+			android:text="=&gt;"
+			android:typeface="monospace"
+			android:onClick="naprej"/>-->
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left|center_vertical"
+		android:background="#44aaaaaa"
+		android:padding="10dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/igr1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_1_placeholder" />
+
+		<TextView
+			android:id="@+id/igr2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_2_placeholder" />
+
+		<TextView
+			android:id="@+id/igr3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_3_placeholder" />
+
+		<TextView
+			android:id="@+id/igr4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_4_placeholder" />
+
+		<TextView
+			android:id="@+id/igr5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_5_placeholder" />
+
+		<TextView
+			android:id="@+id/igr6"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_6_placeholder" />
+
+		<TextView
+			android:id="@+id/igr7"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_7_placeholder" />
+
+		<TextView
+			android:id="@+id/igr8"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_8_placeholder" />
+
+		<TextView
+			android:id="@+id/igr9"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/player_9_placeholder" />
+
+	</LinearLayout>
+
+</merge>

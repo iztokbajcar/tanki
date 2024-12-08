@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="weapons_array">
+		<item>Ordinary projectile</item>
+		<item>Big projectile</item>
+		<item>Explosive projectile</item>
+		<item>Terrain</item>
+		<item>Three ordinary projectiles</item>
+		<item>Cluster bomb</item>
+		<item>Double cluster bomb</item>
+		<item>Double terrain cluster bomb</item>
+		<item>Thermonuclear 20</item>
+		<item>Thermonuclear 50</item>
+	</string-array>
+
+	<string-array name="hp_array" translatable="false">
+		<item>50</item>
+		<item>100</item>
+		<item>150</item>
+		<item>200</item>
+		<item>250</item>
+		<item>500</item>
+		<item>750</item>
+		<item>1000</item>
+		<item>10000</item>
+	</string-array>
+</resources>

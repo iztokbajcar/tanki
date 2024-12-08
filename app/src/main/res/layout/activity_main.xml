@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/lobby_bg"
+	android:orientation="vertical"
+	android:padding="100dp"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/naslov"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="@string/app_name"
+		android:textColor="#ffffff"
+		android:textSize="50sp"
+		android:typeface="monospace" /> <!-- #555500 --> <!-- @drawable/gumb -->
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="48dp"
+		android:layout_gravity="center"
+		android:background="@drawable/gumb"
+		android:onClick="newGame"
+		android:text="@string/new_game" />
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="48dp"
+		android:layout_gravity="center"
+		android:background="@drawable/gumb"
+		android:onClick="settings"
+		android:text="@string/settings" />
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="48dp"
+		android:layout_gravity="center"
+		android:background="@drawable/gumb"
+		android:onClick="credits"
+		android:text="@string/about" />
+
+</LinearLayout>

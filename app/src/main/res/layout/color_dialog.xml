@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="210dp"
+	android:layout_height="match_parent"
+	android:padding="25dp"
+	android:background="#aaaaaa">
+
+	<TextView
+		android:id="@+id/dialog_tekst"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Izberi barvo igralca 0:"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:orientation="vertical">
+
+		<ScrollView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g1"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#400000"/>
+
+					<Button
+						android:id="@+id/g2"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#800000"/>
+
+					<Button
+						android:id="@+id/g3"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#c00000"/>
+
+					<Button
+						android:id="@+id/g4"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#ff0000"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g5"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#402000"/>
+
+					<Button
+						android:id="@+id/g6"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#804000"/>
+
+					<Button
+						android:id="@+id/g7"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#c06000"/>
+
+					<Button
+						android:id="@+id/g8"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#ff8000"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g9"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#404000"/>
+
+					<Button
+						android:id="@+id/g10"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#808000"/>
+
+					<Button
+						android:id="@+id/g11"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#c0c000"/>
+
+					<Button
+						android:id="@+id/g12"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#ffff00"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g13"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#004000"/>
+
+					<Button
+						android:id="@+id/g14"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#008000"/>
+
+					<Button
+						android:id="@+id/g15"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#00c000"/>
+
+					<Button
+						android:id="@+id/g16"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#00ff00"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g17"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#004040"/>
+
+					<Button
+						android:id="@+id/g18"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#008080"/>
+
+					<Button
+						android:id="@+id/g19"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#00c0c0"/>
+
+					<Button
+						android:id="@+id/g20"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#00ffff"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g21"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#000040"/>
+
+					<Button
+						android:id="@+id/g22"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#000080"/>
+
+					<Button
+						android:id="@+id/g23"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#0000c0"/>
+
+					<Button
+						android:id="@+id/g24"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#0000ff"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g25"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#400040"/>
+
+					<Button
+						android:id="@+id/g26"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#800080"/>
+
+					<Button
+						android:id="@+id/g27"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#c000c0"/>
+
+					<Button
+						android:id="@+id/g28"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#ff00ff"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g29"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#404040"/>
+
+					<Button
+						android:id="@+id/g30"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#808080"/>
+
+					<Button
+						android:id="@+id/g31"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#c0c0c0"/>
+
+					<Button
+						android:id="@+id/g32"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#ffffff"/>
+
+				</LinearLayout>
+
+				<!-- Dodatne barve -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g33"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#000000"/>
+
+					<Button
+						android:id="@+id/g34"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#404040"/>
+
+					<Button
+						android:id="@+id/g35"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#4d5d53"/>
+
+					<Button
+						android:id="@+id/g36"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#677278"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/g37"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#003153"/>
+
+					<Button
+						android:id="@+id/g38"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#041e42"/>
+
+					<Button
+						android:id="@+id/g39"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#ffbd1b"/>
+
+					<Button
+						android:id="@+id/g40"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:background="#638994" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+</LinearLayout>

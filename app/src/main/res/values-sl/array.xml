@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="weapons_array">
+		<item>Navaden izstrelek</item>
+		<item>Velik izstrelek</item>
+		<item>Eksploziven izstrelek</item>
+		<item>Trije navadni izstrelki</item>
+		<item>Teren</item>
+		<item>Kasetna bomba</item>
+		<item>Dvojna kasetna bomba</item>
+		<item>Dvojna terenska kas. bomba</item>
+		<item>Termonuklearna 20</item>
+		<item>Termonuklearna 50</item>
+	</string-array>
+</resources>
